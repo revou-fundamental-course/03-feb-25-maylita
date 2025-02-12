@@ -1,1 +1,24 @@
 /* ini file CSS */
+
+main {
+    max-width: 750px;
+    justify-self: center;
+
+    /* Backgroud Matter */
+    background-color: peachpuff;
+    border-radius: 10px;
+
+}
+
+header {    
+    justify-self: center;
+}
+
+section {
+    padding: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
