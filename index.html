@@ -11,64 +11,71 @@
 </head>
 
 <body>
-    <header>
+    <header class="main-header">
         <h1>Konversi Suhu</h1>
     </header>
 
-    <main> 
+    <main>
         <!-- Introduction -->
-         <section> 
-            <p>Masukkan suhu derajat Celcius (&deg;C) ke kotak di bawah, lalu klik tombol konversi 
-                untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F)</p>
-         </section>
+        <section>
+            <p>Masukkan suhu derajat Celcius (&deg;C) ke kotak dibawah,
+                lalu klik tombol konversi untuk mendapatkan hasil konversi
+                dalam bentuk Fahrenheit (&deg;F)</p>
+        </section>
 
-         <!-- Form Input suhu Yang ingin di konversi -->
-         <section>
+        <!-- Form Input Suhu Yang Ingin Di Konversi -->
+        <section>
             <form>
-                <div>
+                <div class="input-group">
                     <label for="main-input">Celcius:</label>
                     <input type="number" id="main-input">
                 </div>
-               
-                <div>
-                    <button>Konversi</button>
-                    <button>Reset</button>
-                    <button>Reverse</button>
+
+                <div class="button-group">
+                    <button class="bg-aquamarine" type="button" onclick="validateForm();">Konversi</button>
+                    <button class="bg-green">Reset</button>
+                    <button class="bg-gray">Reverse</button>
                 </div>
             </form>
-          </section>
+        </section>
 
-          <!-- Hasil Konversi -->
-          <section>
-            <div>
+        <!-- Hasil Konversi -->
+        <section>
+            <div class="input-group">
                 <label for="main-result">Fahrenheit:</label>
                 <input type="text" id="main-result" readonly>
-                
+
             </div>
           </section>
 
-          <!-- Cara Konversi Suhu -->
-           <section>
-            <div>
-                <label for="cara-konversi">Fahrenheit:</label>
+        <!-- Cara Konversi Suhu -->
+        <section>
+            <div class="input-group">
+                <label for="cara-konversi">Cara Konversi:</label>
                 <input type="text" id="cara-konversi" readonly>
             </div>
-           </section>
-        
-          <!-- Penjelasan Rumus Konversi Suhu -->
-           <section>
-            <Header>
+        </section>
+
+        <!-- Penjelasan Rumus Konversi Suhu -->
+        <section>
+            <header>
                 <h3>Cara Konversi Dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h3>
-            </Header>
-            
+            </header>
+
             <hr>
 
-            <article> 
-                <p>Suhu <span>S</span></p>
+            <article>
+                <p>Suhu <span class="remark">S</span></p>
                 <p>S<sub>(&deg;F)</sub>=</p>
             </article>
-    
-           </section>
-    <footer></footer>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made by Maylita Devia</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
